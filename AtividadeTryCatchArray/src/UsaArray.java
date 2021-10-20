@@ -43,4 +43,12 @@ public class UsaArray{
         return aux;
     }
 
+    public void atualizaArray(int arr[], int posicao, int novoValor) throws ArrayIndexOutOfBoundsException {
+        if (posicao > arr.length || posicao < 0) {
+            throw new ArrayIndexOutOfBoundsException("Indíce fora de alcance");
+        } else {
+            arr[posicao] = novoValor;
+        }
+    }
+
 }

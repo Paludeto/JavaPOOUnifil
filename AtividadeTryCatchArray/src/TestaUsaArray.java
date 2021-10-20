@@ -1,7 +1,9 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 public class TestaUsaArray{
+
     public static void main(String args[]){
+
         Scanner teclado = new Scanner(System.in);
         int a[] = new int[5];
         int b[] = new int[5];
@@ -45,6 +47,7 @@ public class TestaUsaArray{
                     break;
                 default:
                     System.out.println("Opção inválida");
+
             }
         }
     }

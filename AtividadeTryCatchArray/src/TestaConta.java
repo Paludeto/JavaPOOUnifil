@@ -10,7 +10,7 @@ public class TestaConta {
 
         Conta c2 = new Conta(150, 50);
         try {
-            c.setNumero(1500);
+            c.setNumero(11000);
         } catch (NumeroInvalidoException e) {
             e.printStackTrace();
         }

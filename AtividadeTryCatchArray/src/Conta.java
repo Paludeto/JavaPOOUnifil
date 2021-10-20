@@ -9,7 +9,7 @@ public class Conta {
     }
 
     public void setNumero(int novoNumero) throws NumeroInvalidoException {
-        if (novoNumero < 0 || novoNumero > 1000) {
+        if (novoNumero < 0 || novoNumero > 10000) {
             throw new NumeroInvalidoException("O numero deve ser positivo e menor que 1000");
         } else {
             novoNumero = this.numero;

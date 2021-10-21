@@ -1,6 +1,5 @@
 package br.edu.unifil.lpoo.equipe.modelo;
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class Equipe {
 
@@ -9,7 +8,7 @@ public class Equipe {
 
     public Equipe(String nomeDaEquipe) {
         this.nomeDaEquipe = nomeDaEquipe;
-        ArrayList<Jogador> listaJogadores = new ArrayList<>();
+        this.listaJogadores = new ArrayList<>();
     }
 
     public String getNomeDaEquipe() {
@@ -37,16 +36,21 @@ public class Equipe {
         String concatena = "";
         for (int i = 0; i < listaJogadores.size(); i++) {
             jog = listaJogadores.get(i);
-            concatena = "Nome: " + jog.getNome() + "Posição: " + jog.getPosicao();
+            concatena = "Nome: " + jog.getNome() + '\n' + "Posição: " + jog.getPosicao();
         }
         return concatena;
     }
 
-//    public Jogador getJogador(String nome) throws ParametroInvalidoException {
-//        String compara;
-//        for (int i = 0; i < listaJogadores.size(); i++) {
-//            compara = listaJogadores.get(i).getNome();
-//        }
-//    }
+    public Jogador getJogador(String nome) throws ParametroInvalidoException {
+        Jogador jog = new Jogador();
+        for (int i = 0; i < listaJogadores.size(); i++) {
+            if (nome.equals(listaJogadores.get(i).getNome())) {
+                jog = listaJogadores.get(i);
+            } else {
+                throw new ParametroInvalidoException("Deu ruim");
+            }
+        }
+        return jog;
+    }
 
 }

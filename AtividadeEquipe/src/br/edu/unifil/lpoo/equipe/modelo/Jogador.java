@@ -10,6 +10,10 @@ public class Jogador {
         this.posicao = posicao;
     }
 
+    public Jogador() {
+
+    }
+
     public String getNome() {
         return nome;
     }

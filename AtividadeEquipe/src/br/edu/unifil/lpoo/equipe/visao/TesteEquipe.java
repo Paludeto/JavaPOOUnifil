@@ -14,6 +14,9 @@ public class TesteEquipe {
         Equipe e1 = new Equipe("Paysandu");
         e1.setNomeDaEquipe("Rolandia");
         System.out.println(e1.getNomeDaEquipe());
+        e1.addJogador(j1);
+        System.out.println(e1.getJogador("Cleiton Rasta 2"));
+        System.out.println(e1.listarJogadores());
 
     }
 

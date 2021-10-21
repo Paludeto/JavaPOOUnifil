@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61f5ef87-2585-45c8-b3e2-a72077dd575c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/br/edu/unifil/lpoo/consulta/controle/CadastroDeConsultas.java" beforeDir="false" afterPath="$PROJECT_DIR$/br/edu/unifil/lpoo/consulta/controle/CadastroDeConsultas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/br/edu/unifil/lpoo/consulta/visao/SistemaDaClinica.java" beforeDir="false" afterPath="$PROJECT_DIR$/br/edu/unifil/lpoo/consulta/visao/SistemaDaClinica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AtividadeEquipe/out/production/AtividadeEquipe/br/edu/unifil/lpoo/equipe/modelo/Equipe.class" beforeDir="false" afterPath="$PROJECT_DIR$/../AtividadeEquipe/out/production/AtividadeEquipe/br/edu/unifil/lpoo/equipe/modelo/Equipe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AtividadeEquipe/out/production/AtividadeEquipe/br/edu/unifil/lpoo/equipe/visao/TesteEquipe.class" beforeDir="false" afterPath="$PROJECT_DIR$/../AtividadeEquipe/out/production/AtividadeEquipe/br/edu/unifil/lpoo/equipe/visao/TesteEquipe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AtividadeEquipe/src/br/edu/unifil/lpoo/equipe/modelo/Equipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AtividadeEquipe/src/br/edu/unifil/lpoo/equipe/modelo/Equipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AtividadeEquipe/src/br/edu/unifil/lpoo/equipe/visao/TesteEquipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/../AtividadeEquipe/src/br/edu/unifil/lpoo/equipe/visao/TesteEquipe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,9 +13,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1y6wKngWrkEshIWJnhehS9EeEXa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -32,6 +35,7 @@
       <option name="presentableId" value="Default" />
       <updated>1631585289073</updated>
       <workItem from="1631585291653" duration="120000" />
+      <workItem from="1634786475031" duration="53000" />
     </task>
     <servers />
   </component>

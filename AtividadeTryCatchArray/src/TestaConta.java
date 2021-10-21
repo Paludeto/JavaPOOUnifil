@@ -1,5 +1,5 @@
 public class TestaConta {
-    public static void main(String[] args) throws NumeroInvalidoException {
+    public static void main(String[] args) throws NumeroInvalidoException, SaldoInsuficienteException, ValorNegativoException {
 
         Conta c = new Conta(100, 0);
         try {

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/JavaConsulta" isTestSource="false" packagePrefix="br.edu.unifil.lpoo.consulta.modelo" />
+      <sourceFolder url="file://$MODULE_DIR$/JavaConsultaCompleto" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/RH Java" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

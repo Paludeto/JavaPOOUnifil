@@ -38,4 +38,8 @@ public class Jogador {
         }
     }
 
+    public String toString() {
+        return "Nome: " + getNome() + '\n' + "Posição: " + getPosicao();
+    }
+
 }

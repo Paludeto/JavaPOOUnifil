@@ -65,7 +65,10 @@ public class Principal {
                 default:
                     System.out.println("ERRO! Escolha uma opção válida utilizando um número");
                     break;
+                case 4:
+                    opcao = 4;
             }
+
         } while (opcao != 4);
     }
 }

@@ -45,6 +45,7 @@ public class Principal {
 
                             Horista h1 = new Horista(nomeH1, matriculaH1, salarioH1, horasTrabalhadasH1);
                             c1.cadastraFuncionario(h1);
+                            break;
                         } else if (tipo == 2) {
                             System.out.println("Nome?");
                             String nomeM1 = sc.next();
@@ -55,6 +56,7 @@ public class Principal {
 
                             Mensalista m1 = new Mensalista(nomeM1, matriculaM1, salarioM1);
                             c1.cadastraFuncionario(m1);
+                            break;
                         } else if (tipo == 3) {
                             System.out.println("Nome?");
                             String nomeP1 = sc.next();
@@ -67,6 +69,7 @@ public class Principal {
 
                             Produção p1 = new Produção(nomeP1, matriculaP1, salarioP1, quantidadeProduzidaP1);
                             c1.cadastraFuncionario(p1);
+                            break;
                         } else if (tipo == 4) {
                             System.out.println("Nome?");
                             String nomeC1 = sc.next();
@@ -81,6 +84,7 @@ public class Principal {
 
                             Comissionado com1 = new Comissionado(nomeC1, matriculaC1, salarioC1, comissao, quantidadeVendida);
                             c1.cadastraFuncionario(com1);
+                            break;
                         } else if (tipo == 5) {
                             break;
                         } else {

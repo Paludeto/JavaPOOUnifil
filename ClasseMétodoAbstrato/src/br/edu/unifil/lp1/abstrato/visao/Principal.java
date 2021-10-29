@@ -22,6 +22,13 @@ public class Principal {
                         6. Encerrar programa
                         """));
                 int opcao = sc.nextInt();
+                String nome;
+                int matricula;
+                double salario;
+                double horasTrabalhadas;
+                double quantidadeProduzida;
+                double comissao;
+                double quantidadeVendida;
                 switch (opcao) {
                     case 1:
                         System.out.println(("\n" + """
@@ -35,51 +42,51 @@ public class Principal {
                         int tipo = sc.nextInt();
                         if (tipo == 1) {
                             System.out.println("Nome?");
-                            String nomeH1 = sc.next();
+                            nome = sc.next();
                             System.out.println("Matrícula?");
-                            int matriculaH1 = sc.nextInt();
+                            matricula = sc.nextInt();
                             System.out.println("Salário?");
-                            double salarioH1 = sc.nextDouble();
+                            salario = sc.nextDouble();
                             System.out.println("Horas trabalhadas?");
-                            double horasTrabalhadasH1 = sc.nextDouble();
+                            horasTrabalhadas = sc.nextDouble();
 
-                            Horista h1 = new Horista(nomeH1, matriculaH1, salarioH1, horasTrabalhadasH1);
+                            Horista h1 = new Horista(nome, matricula, salario, horasTrabalhadas);
                             c1.cadastraFuncionario(h1);
                         } else if (tipo == 2) {
                             System.out.println("Nome?");
-                            String nomeM1 = sc.next();
+                            nome = sc.next();
                             System.out.println("Matrícula?");
-                            int matriculaM1 = sc.nextInt();
+                            matricula = sc.nextInt();
                             System.out.println("Salário?");
-                            double salarioM1 = sc.nextDouble();
+                            salario = sc.nextDouble();
 
-                            Mensalista m1 = new Mensalista(nomeM1, matriculaM1, salarioM1);
+                            Mensalista m1 = new Mensalista(nome, matricula, salario);
                             c1.cadastraFuncionario(m1);
                         } else if (tipo == 3) {
                             System.out.println("Nome?");
-                            String nomeP1 = sc.next();
+                            nome = sc.next();
                             System.out.println("Matrícula?");
-                            int matriculaP1 = sc.nextInt();
+                            matricula = sc.nextInt();
                             System.out.println("Salário?");
-                            double salarioP1 = sc.nextDouble();
+                            salario = sc.nextDouble();
                             System.out.println("Quantidade produzida?");
-                            double quantidadeProduzidaP1 = sc.nextDouble();
+                            quantidadeProduzida = sc.nextDouble();
 
-                            Produção p1 = new Produção(nomeP1, matriculaP1, salarioP1, quantidadeProduzidaP1);
+                            Produção p1 = new Produção(nome, matricula, salario, quantidadeProduzida);
                             c1.cadastraFuncionario(p1);
                         } else if (tipo == 4) {
                             System.out.println("Nome?");
-                            String nomeC1 = sc.next();
+                            nome = sc.next();
                             System.out.println("Matrícula?");
-                            int matriculaC1 = sc.nextInt();
+                            matricula = sc.nextInt();
                             System.out.println("Salário?");
-                            double salarioC1 = sc.nextDouble();
+                            salario = sc.nextDouble();
                             System.out.println("Comissão?");
-                            double comissao = sc.nextDouble();
+                            comissao = sc.nextDouble();
                             System.out.println("Quantidade vendida?");
-                            double quantidadeVendida = sc.nextDouble();
+                            quantidadeVendida = sc.nextDouble();
 
-                            Comissionado com1 = new Comissionado(nomeC1, matriculaC1, salarioC1, comissao, quantidadeVendida);
+                            Comissionado com1 = new Comissionado(nome, matricula, salario, comissao, quantidadeVendida);
                             c1.cadastraFuncionario(com1);
                         } else if (tipo == 5) {
                             break;
@@ -107,6 +114,7 @@ public class Principal {
                         break;
                     case 6:
                         para = 6;
+                        break;
                 }
             } catch (Exception e) {
                 System.out.println("Argumento invalido!");

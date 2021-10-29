@@ -36,7 +36,7 @@ public class Equipe {
         String concatena = "";
         for (int i = 0; i < listaJogadores.size(); i++) {
             jog = listaJogadores.get(i);
-            concatena = "Nome: " + jog.getNome() + '\n' + "Posição: " + jog.getPosicao();
+            concatena += "Nome: " + jog.getNome() + '\n' + "Posição: " + jog.getPosicao() + '\n';
         }
         return concatena;
     }

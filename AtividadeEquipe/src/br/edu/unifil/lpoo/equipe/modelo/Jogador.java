@@ -38,9 +38,4 @@ public class Jogador {
         }
     }
 
-    @Override
-    public String toString() {
-        return "Nome: " + getNome() + '\n' + "Posição: " + getPosicao();
-    }
-
 }

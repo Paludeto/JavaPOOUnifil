@@ -20,7 +20,7 @@ public class Controle {
         String concatena = "";
         for (int i = 0; i < listaEmp.size(); i++) {
             func = listaEmp.get(i);
-            concatena = "Matrícula: " + func.getMatricula() + '\n' + "Nome: " + func.getNome() + '\n' + "Ganho Mensal: " + func.getGanhoMensal();
+            concatena += "Matrícula: " + func.getMatricula() + '\n' + "Nome: " + func.getNome() + '\n' + "Ganho Mensal: " + func.getGanhoMensal() + '\n';
         }
         return concatena;
     }
@@ -30,11 +30,10 @@ public class Controle {
         for (int i = 0; i < listaEmp.size(); i++) {
             if (matricula == (listaEmp.get(i).getMatricula())) {
                 func = listaEmp.get(i);
-            } else {
-                return null;
+                return func;
             }
         }
-        return func;
+        return null;
     }
 
     public void removeFuncionario(Funcionario funcionario) {

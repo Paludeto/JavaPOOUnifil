@@ -2,7 +2,7 @@ package br.edu.unifil.lp1.abstrato.modelo;
 
 public class Mensalista extends Funcionario {
 
-    public Mensalista(String nome, String matricula, double salario) {
+    public Mensalista(String nome, int matricula, double salario) {
         super(nome, matricula, salario);
     }
 

@@ -4,7 +4,7 @@ public class Horista extends Funcionario {
 
     private double horasTrabalhadas;
 
-    public Horista(String nome, String matricula, double salario, double horasTrabalhadas) {
+    public Horista(String nome, int matricula, double salario, double horasTrabalhadas) {
         super(nome, matricula, salario);
         this.horasTrabalhadas = horasTrabalhadas;
     }

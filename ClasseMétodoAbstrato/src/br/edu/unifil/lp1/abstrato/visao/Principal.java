@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Principal {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SalarioInvalidoException {
         Scanner sc = new Scanner(System.in);
         Controle c1 = new Controle();
         int para = 0;
@@ -36,7 +36,7 @@ public class Principal {
                         System.out.println("Nome?");
                         String nomeH1 = sc.next();
                         System.out.println("Matrícula?");
-                        String matriculaH1 = sc.next();
+                        int matriculaH1 = sc.nextInt();
                         System.out.println("Salário?");
                         double salarioH1 = sc.nextDouble();
                         System.out.println("Horas trabalhadas?");
@@ -48,7 +48,7 @@ public class Principal {
                         System.out.println("Nome?");
                         String nomeM1 = sc.next();
                         System.out.println("Matrícula?");
-                        String matriculaM1 = sc.next();
+                        int matriculaM1 = sc.nextInt();
                         System.out.println("Salário?");
                         double salarioM1 = sc.nextDouble();
 
@@ -58,7 +58,7 @@ public class Principal {
                         System.out.println("Nome?");
                         String nomeP1 = sc.next();
                         System.out.println("Matrícula?");
-                        String matriculaP1 = sc.next();
+                        int matriculaP1 = sc.nextInt();
                         System.out.println("Salário?");
                         double salarioP1 = sc.nextDouble();
                         System.out.println("Quantidade produzida?");
@@ -66,12 +66,11 @@ public class Principal {
 
                         Produção p1 = new Produção(nomeP1, matriculaP1, salarioP1, quantidadeProduzidaP1);
                         c1.cadastraFuncionario(p1);
-                        break;
                     } else if (tipo == 4) {
                         System.out.println("Nome?");
                         String nomeC1 = sc.next();
                         System.out.println("Matrícula?");
-                        String matriculaC1 = sc.next();
+                        int matriculaC1 = sc.nextInt();
                         System.out.println("Salário?");
                         double salarioC1 = sc.nextDouble();
                         System.out.println("Comissão?");
@@ -87,7 +86,26 @@ public class Principal {
                         System.out.println("Digite um número válido");
                     }
                 case 2:
-                    c1.listaFuncionario();
+                    System.out.println(c1.listaFuncionario());
+                    break;
+                case 3:
+                    System.out.println("Digite a matrícula");
+                    System.out.println(c1.getFuncionario(sc.nextInt()));
+                    break;
+                case 4:
+                    System.out.println("Matrícula de quem deseja remover?");
+                    Funcionario func;
+                    func = c1.getFuncionario(sc.nextInt());
+                    c1.removeFuncionario(func);
+                    break;
+                case 5:
+                    System.out.println("Informe a matrícula de quem deseja atualizar o salário");
+                    func = c1.getFuncionario(sc.nextInt());
+                    System.out.println("Informe o salário");
+                    func.setSalario(sc.nextDouble());
+                    break;
+                case 6:
+                    para = 6;
             }
 
         } while (para != 6);

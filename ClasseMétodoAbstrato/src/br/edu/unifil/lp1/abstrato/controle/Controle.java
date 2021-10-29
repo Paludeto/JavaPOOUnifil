@@ -1,5 +1,6 @@
 package br.edu.unifil.lp1.abstrato.controle;
 import br.edu.unifil.lp1.abstrato.modelo.*;
+
 import java.util.ArrayList;
 
 public class Controle {
@@ -7,7 +8,7 @@ public class Controle {
     private ArrayList<Funcionario> listaEmp;
 
     public Controle() {
-        listaEmp = new ArrayList<Funcionario>();
+        this.listaEmp = new ArrayList<>();
     }
 
     public void cadastraFuncionario(Funcionario funcionario) {
@@ -24,10 +25,10 @@ public class Controle {
         return concatena;
     }
 
-    public Funcionario getFuncionario(String matricula) {
+    public Funcionario getFuncionario(int matricula) {
         Funcionario func = null;
         for (int i = 0; i < listaEmp.size(); i++) {
-            if (matricula.equals(listaEmp.get(i).getMatricula())) {
+            if (matricula == (listaEmp.get(i).getMatricula())) {
                 func = listaEmp.get(i);
             } else {
                 return null;

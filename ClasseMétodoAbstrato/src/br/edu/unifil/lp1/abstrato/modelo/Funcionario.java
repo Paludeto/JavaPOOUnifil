@@ -2,25 +2,25 @@ package br.edu.unifil.lp1.abstrato.modelo;
 
 public abstract class Funcionario extends Pessoa {
 
-    private String matricula;
+    private int matricula;
     private double salario;
 
-    public Funcionario(String nome, String matricula, double salario) {
+    public Funcionario(String nome, int matricula, double salario) {
         super(nome);
         this.matricula = matricula;
         this.salario = salario;
     }
 
-    public String getMatricula() {
-        return matricula;
+    public int getMatricula() {
+        return this.matricula;
     }
 
-    public void setMatricula(String matricula) {
+    public void setMatricula(int matricula) {
         this.matricula = matricula;
     }
 
     public double getSalario() {
-        return salario;
+        return this.salario;
     }
 
     public void setSalario(double salario) throws SalarioInvalidoException {

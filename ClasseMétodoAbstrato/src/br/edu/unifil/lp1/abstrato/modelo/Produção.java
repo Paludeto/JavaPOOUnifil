@@ -4,7 +4,7 @@ public class Produção extends Funcionario {
 
     private double quantidadeProduzida;
 
-    public Produção(String nome, String matricula, double salario, double quantidadeProduzida) {
+    public Produção(String nome, int matricula, double salario, double quantidadeProduzida) {
         super(nome, matricula, salario);
         this.quantidadeProduzida = quantidadeProduzida;
     }

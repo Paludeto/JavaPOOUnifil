@@ -5,7 +5,7 @@ public class Comissionado extends Funcionario {
     private double comissao;
     private double quantidadeVendida;
 
-    public Comissionado(String nome, String matricula, double salario, double commisao, double quantidadeVendida) {
+    public Comissionado(String nome, int matricula, double salario, double commisao, double quantidadeVendida) {
         super(nome, matricula, salario);
         this.comissao = commisao;
         this.quantidadeVendida = quantidadeVendida;

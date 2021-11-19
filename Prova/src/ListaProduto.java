@@ -21,7 +21,7 @@ public class ListaProduto {
 
         ArrayList<String> saida = new ArrayList<>();
 
-        for (Produto prod : lista) {
+        for (Produto prod : listaInput) {
             if (!saida.contains(prod.getDescricao())) {
                 saida.add(prod.getDescricao());
             }
